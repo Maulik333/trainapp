@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txt_firstname"
+        android:layout_height="wrap_content"
+        android:text="@string/First_name"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/edt_Enter_your_First_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txt_firstname"
+        android:layout_alignBaseline="@+id/txt_firstname"
+        android:hint="@string/Enter_your_First_name"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/txt_firstname" />
+
+    <TextView
+        android:id="@+id/txt_Last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@+id/edt_Enter_your_First_name"
+        android:text="@string/Last_name" />
+
+    <EditText
+        android:id="@+id/edt_Enter_your_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_firstname"
+        android:layout_toRightOf="@+id/txt_Last_name"
+        android:layout_alignBaseline="@+id/txt_Last_name"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/Enter_your_last_name" />
+
+    <TextView
+        android:id="@+id/txt_Email_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Email_Id"
+        android:textColor="@color/black"
+        android:layout_below="@+id/edt_Enter_your_last_name"/>
+    <EditText
+        android:id="@+id/edt_Enter_Email_Id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_email_id"
+        android:layout_toRightOf="@+id/txt_Email_Id"
+        android:layout_alignBaseline="@+id/txt_Email_Id"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/txt_Email_Id" />
+
+    <TextView
+        android:id="@+id/txt_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Password"
+        android:textColor="@color/black"
+        android:layout_below="@+id/edt_Enter_Email_Id" />
+    <EditText
+        android:id="@+id/edt_Enter_your_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_Password"
+        android:layout_toRightOf="@+id/txt_Password"
+        android:layout_alignBaseline="@+id/txt_Password"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/Enter_your_Password"/>
+
+
+</RelativeLayout>

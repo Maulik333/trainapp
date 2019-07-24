@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    tools:context=".DbhelperActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/btn_Insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Insert"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/btn_Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_Insert"
+        android:text="@string/Update"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/btn_Select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_Update"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:text="@string/Select"/>
+
+    <Button
+        android:id="@+id/btn_Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_Select"
+        android:textColor="@color/black"
+        android:text="@string/Delete"
+        android:layout_marginTop="50dp"/>
+</RelativeLayout>

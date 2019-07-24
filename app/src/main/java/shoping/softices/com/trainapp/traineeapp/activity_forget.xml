@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/picture"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/txt_Email_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Email_Id"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/edt_Enter_Email_Id"
+        android:layout_below="@+id/txt_Email_Id"
+        android:hint="@string/enter_email_id"
+        android:layout_toRightOf="@+id/txt_Email_Id"
+        android:layout_alignBaseline="@+id/txt_Email_Id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btn_resetpassword"
+        android:layout_below="@+id/edt_Enter_Email_Id"
+        android:text="@string/Resetpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
+    </FrameLayout>
